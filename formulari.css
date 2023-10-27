@@ -1,3 +1,4 @@
+/* Amanda Andreis y Melissa Ait, 1r ASIX B */
 #container {
     display: flex;
     justify-content: center;
@@ -81,11 +82,11 @@ textarea:focus {
     height: 180px
 }
 fieldset{
-    border: 3px solid #1c2a6e; /* Borde alrededor del campo */
-    width: 600px; /* Ancho deseado de la caja */
-    margin: 0 auto; /* Centra horizontalmente */
-    padding: 20px; /* Espacio interior para separar el contenido del borde */
-    border-radius: 5px; /* Bordes redondeados al campo */
+    border: 3px solid #1c2a6e; 
+    width: 600px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border-radius: 5px; 
 }
 legend {
     font-size:xx-large;
