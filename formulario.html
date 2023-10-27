@@ -1,6 +1,95 @@
+<!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="formulari.css"> 
+        <link rel="icon" href="logo.png">
+        <title>Formulario CiberNews</title>
+        <meta charset="UTF-8">
+    </head>
     <body>
-        
+        <div id="container"> <!-- contenedor principal -->
+            <div id="formulario"> <!-- contenedor para centrar todo el formulario en el medio d la pagina -->
+                <div id="titulo_logo">
+                <img id="logo" src="logo.png" alt="Logo">
+                <h1 id="titol-pagina">Suscríbete al noticiario CiberNews</h1>
+                </div>
+                <h3></h3>
+                <form action="formulari_enviat.html"> <!-- redirecciona a la otra pagina -->
+                    <div id="Dades">
+                        <fieldset>
+                            <legend style="color: rgb(0, 0, 0) ;">Datos Personales</legend> <!-- Para que los bordes no corten el titulo del apartado -->
+                                <div>
+                                    <label for="nombre">Nombre:</label>
+                                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="apellido">Apellido:</label>
+                                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                                </div>
+                                <br>
+                        
+                                <label for="email">Correo electrónico: </label>
+                                <input type="email" id="email" placeholder="ej: correo@email.cat" required>
+                                <br>
+                                <br>
+                                <label for="edad">Edad:</label>
+                                <input type="number" id="edad" name="edad" required>
+                                <br>
+                                <br>
+                                <label for="ocupacion">Ocupación:</label>
+                                <select id="ocupacion" name="ocupacion">
+                                    <option value="estudiante">Estudiante</option>
+                                    <option value="trabajador">Trabajador</option>
+                                    <option value="desempleado">No estoy trabajando ni estudiando en este momento.</option>
+                                </select>
+                                <br>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset id="Intereses">
+                            <legend style="color: rgb(0, 0, 0) ;">Intereses</legend>
+                        <br>
+                        <div>
+                            <label>Intereses relacionados con la ciberseguridad:</label>
+                            <br>
+                            <br>
+                            <input type="checkbox" id="interes1" name="intereses[]" value="hacking">
+                            <label for="interes1">Hacking Ético</label>
+                        </div>
+                
+                        <div>
+                            <input type="checkbox" id="interes2" name="intereses[]" value="seguridad-redes">
+                            <label for="interes2">Seguridad en Redes</label>
+                        </div>
+                
+                        <div>
+                            <input type="checkbox" id="interes3" name="intereses[]" value="criptografia">
+                            <label for="interes3">Criptografía</label>
+                        </div>
+                        <br>
+                        <label>Tipo de noticias preferidas:</label>
+                        <br>
+                        <br>
+                        <input type="radio" id="tipo1" name="tipo_noticias" value="noticias-amenazas" checked>
+                        <label for="tipo1">Noticias sobre Amenazas</label>
+                        <input type="radio" id="tipo2" name="tipo_noticias" value="ciberdefensa">
+                        <label for="tipo2">Ciberdefensa</label>
+                        <input type="radio" id="tipo3" name="tipo_noticias" value="seguridad-redes">
+                        <label for="tipo3">Seguridad en Redes</label>
+                        <br>
+                        <br>
+                        <label for="comentario">¿Tiene algún comentario o sugerencia que desee compartir con nosotros?  </label>
+                        <br>
+                        <br>
+                        <textarea id="cajatexto" id="comentario" name="comentario" placeholder="Escribe tus sugerencias al portal."></textarea>
+                        <br>
+                        <br>
+                        <input id="boton_enviar" type="submit" value="Enviar">  
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        </form>
     </body>
-    fjijh
-</html
+</html>

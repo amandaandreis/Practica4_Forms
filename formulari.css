@@ -1,0 +1,115 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh; /* Centra el contenido verticalmente en la página */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#formulario {
+    background-color: #f2f2f2; /* Color de fondo más claro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+body {
+    background-color: #77a1bd;
+    font-family: Arial, sans-serif;
+}
+
+#titulo_logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+#titol-pagina {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #050a25;
+}
+
+#logo {
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+
+
+input[type="text"],input[type="email"]
+ {
+    width: 300px;
+}
+
+input[type="number"] {
+    width: 100px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    background-color: #28357b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #46494f;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    background-color: #FFFFCC; /* Cambia el color de fondo cuando tiene el foco */
+}
+
+#cajatexto{
+    align-items: center;
+    width:500px;
+    height: 180px
+}
+fieldset{
+    border: 3px solid #1c2a6e; /* Borde alrededor del campo */
+    width: 600px; /* Ancho deseado de la caja */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 20px; /* Espacio interior para separar el contenido del borde */
+    border-radius: 5px; /* Bordes redondeados al campo */
+}
+legend {
+    font-size:xx-large;
+}
+#Intereses {
+    border: solid;
+    border-width: 3px;
+    border-color: #1c2a6e;
+    width: 600px
+
+}
+
+
+#boton_enviar {
+    width: 150px;
+    height: 40px;
+    background-color: #28357b;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin: 0 auto; 
+    display: block;
+}
+
+#boton_enviar:hover {
+    background-color: #46494f;
+}
